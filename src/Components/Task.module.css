@@ -1,0 +1,118 @@
+
+.contentTask{
+        background: var(--gray-500);
+        height:25rem ;
+        padding-top: 5.688rem;
+        padding-right: 2rem;
+        margin-left: 24.44vw ;
+        width: 50rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+}
+.taskNumbers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 35.063rem;
+  margin-bottom: 2rem;
+
+}
+
+.nameNumbers{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.063rem;
+  color: var(--purple);
+}
+
+.number{
+ color:white;
+ background: var(--gray-400);
+ border-radius: 999px;
+ width: 1.5rem;
+height: 1.188rem;
+padding: 0.125rem 0.5rem;
+}
+
+.empty{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.25;
+  padding-top: 2rem;
+  border-top: 1px solid;
+  border-color: var(--gray-400);
+  width: 50rem;
+}
+
+.boxItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  gap: 0.8rem;
+  width: 46rem;
+  height: 4.5rem;
+  border: 1px solid #333333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+.boxItem input{
+  display: none;
+}
+.boxItem input + label:before {
+  content: '';
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  margin-bottom: 3px;
+}
+
+.boxItem input:checked + label:before {
+  background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--purple);
+
+  background-position: center;
+  border: 2px solid var(--purple);
+  padding: 1px;
+}
+.p{
+  width: 632px;
+  height: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #F2F2F2;
+}
+
+.button{
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px){
+  .contentTask{
+    width: 30rem;
+  }
+  .number{
+    
+    font-size: 8px;
+  }
+  .nameNumbers{
+    font-size: 8px;
+    
+  }
+}

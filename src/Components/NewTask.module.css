@@ -1,0 +1,56 @@
+.newtask {
+  position: absolute;
+  top: 10.8125rem;
+  left: 24.44vw;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  
+}
+
+.input {
+  width: 39.875rem;
+  /**39.875rem**/
+  height: 3.375rem;
+  border: 1px solid #0D0D0D;
+  border-radius: 8px;
+  background: var(--gray-500);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+
+  color: #808080;
+}
+
+
+.button {
+  width: 5.625rem;
+  height: 3.25rem;
+  background: var(--BlueDark);
+  border-radius: 8px;
+  border: 1px solid #0D0D0D;
+
+}
+
+@media (max-width: 768px){
+  .input {
+    width:30rem;
+    height:5rem;
+    font-size: 2rem;
+    
+  }
+  .newtask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .button{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
